@@ -18,7 +18,11 @@ function maximumMulti($tableauNB) {
             $position = $index+1;
         }
     }
-    echo "Le maximum est $max, c'est le $position ème nombre.";
+    if ($position == 1) {
+        echo "Le maximum est $max, c'est le $position er nombre.";
+    } else {
+        echo "Le maximum est $max, c'est le $position ème nombre.";
+    } 
 }
 ?>
 
