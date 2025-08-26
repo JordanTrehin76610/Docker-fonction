@@ -1,11 +1,8 @@
 <?php
 function estPair($nombre){
-    if ($nombre % 2 == 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return $nombre % 2 == 0;
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +17,9 @@ function estPair($nombre){
 
 
 <body>
-    <h1><?= estPair(14986) == true ? "14986 est pair" : "14986 est impair"; ?></h1>
-    <p><?= estPair(12) == true ? "12 est pair" : "12 est impair"; ?></p>
-    <p><?= estPair(37) == true ? "37 est pair" : "37 est impair"; ?></p>
+    <h1><?= estPair(14986) ? "14986 est pair" : "14986 est impair"; ?></h1>
+    <p><?= estPair(12) ? "12 est pair" : "12 est impair"; ?></p>
+    <p><?= estPair(37) ? "37 est pair" : "37 est impair"; ?></p>
     <button onclick="window.location.href='../index.php'">Retour</button>
 </body>
 
